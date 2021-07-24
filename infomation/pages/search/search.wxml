@@ -1,0 +1,28 @@
+<!--list.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class='search'>
+      <view>
+        <input type='text' name="title" class='title' placeholder="按标题搜索" 
+        placeholder-class="pl-style" value="{{title}}"></input>
+      </view>
+      <view>
+        <button form-type='submit' class='submit'>search</button>
+      </view>
+    </view>
+  </form>
+
+  <view class="news-item-container">
+    <navigator url="../detail/detail?news_id={{item.news_id}}" wx:for="{{list}}" wx:for-index="id">
+      <view class="news-item">
+        <view class="news-item-right">
+          <image src="{{item.img_url}}" class="news-image" />
+        </view>
+        <view class="news-item-left">
+          <text class="news-item-title">{{item.title}}</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+
+</view>

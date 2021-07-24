@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/detail/detail",
+    "pages/recommend/recommend",
+    "pages/list/list",
+    "pages/theme/theme",
+    "pages/user/user",
+    "pages/profile/profile",
+    "pages/history/history",
+    "pages/message/message",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "体坛快讯",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9a9a9",
+    "selectedColor": "#1f1f1f",
+    "backgroundColor": "#fefefe",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/theme/theme",
+        "text": "首页",
+        "iconPath": "images/Main1.png",
+        "selectedIconPath": "images/Main2.png"
+      },
+      {
+        "pagePath": "pages/recommend/recommend",
+        "text": "推荐",
+        "iconPath": "images/introduce1.png",
+        "selectedIconPath": "images/introduce2.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "images/Mine1.png",
+        "selectedIconPath": "images/Mine2.png"
+      }
+    ]
+  }
+}

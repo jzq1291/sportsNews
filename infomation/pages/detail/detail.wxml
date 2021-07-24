@@ -1,0 +1,21 @@
+<!--detail.wxml-->
+<view class="container">
+    <view class="art-title">
+          <view>{{art.title}}</view>
+          <text class='date'>{{art.date}}</text>
+    </view>
+    
+    <view class="art-header">
+        <image src="{{art.img_url}}" class="art-img"/>
+    </view>
+    <view class="art-content">
+       <rich-text class="rich" nodes="{{art.content}}"> </rich-text>
+    </view> 
+
+    <view class='source' wx:if="{{art.source_id == 1}}">
+      新闻来源：虎扑体育
+    </view>
+      <view class='source' wx:if="{{art.source_id == 3}}">
+      新闻来源：新浪体育
+    </view>
+</view>

@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="container more">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+    <view class="my">
+      <view class="my-item flex-wrp" bindtap='profile'>
+        <view class="myitem-icon flex-item">
+          <image src="../../images/heart2.png"></image>
+        </view>
+        <view class="myitem-name flex-item">
+          <text class='pro'>我的喜好</text>
+        </view>
+      </view>
+
+      <view class="my-item flex-wrp" bindtap='history'>
+        <view class="myitem-icon flex-item">
+          <image src="../../images/recent.png"></image>
+        </view>
+        <view class="myitem-name flex-item">
+          <text class='his'>浏览历史</text>
+        </view>
+      </view>
+
+      <view class="my-item flex-wrp" bindtap='search'>
+        <view class="myitem-icon flex-item">
+          <image src="../../images/search.png"></image>
+        </view>
+        <view class="myitem-name flex-item">
+          <text class='his'>新闻检索</text>
+        </view>
+      </view>
+
+      <view class="my-item flex-wrp" bindtap='message'>
+        <view class="myitem-icon flex-item">
+          <image src="../../images/chat.png"></image>
+        </view>
+        <view class="myitem-name flex-item">
+          <text class='his'>我要提意见</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

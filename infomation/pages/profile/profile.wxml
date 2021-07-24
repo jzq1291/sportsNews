@@ -1,0 +1,23 @@
+<!--pages/profile/profile.wxml-->
+
+<view>
+  <form bindsubmit="formSubmit">
+    <view class="section section_gap">
+      <checkbox-group class="group" bindchange="checkboxChange" name="checkbox">
+        <view class="label-1" wx:for="{{checkboxItems}}">
+          <label>
+            <checkbox hidden='true' value="{{item.sportId}}" checked="{{item.checked}}"></checkbox>
+            <view class="label-1__icon">
+              <view class="label-1__icon-checked" style="opacity:{{item.checked ? 1: 0}}"></view>
+            </view>
+            <text class="label-1__text">{{item.sportName}}</text>
+          </label>
+        </view>
+      </checkbox-group>
+    </view>
+    <view class="btn-area">
+      <button formType="submit" class='submit'>保存</button>
+    </view>
+  </form>
+  <view class='hint'>{{hint}}</view>
+</view>

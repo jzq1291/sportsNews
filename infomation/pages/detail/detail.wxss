@@ -1,0 +1,60 @@
+.art-header{
+    position: relative;
+    width: 100%;
+    height: 219px;
+    color: #FFF;
+    text-align: center;
+}
+.art-img{
+    width: 90%;
+    height: 219px;
+}
+
+.art-title{
+    position:relative;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+}
+
+.art-source {
+    position: absolute;
+    bottom: 8px;
+    font-size: 14px;
+    right: 8px;   
+}
+
+.art-content{
+    font-size: 14px;
+    color: #616466;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    background-color: #FFF;
+    line-height: 1.6;
+}
+
+.date{
+  font-size: 12px;
+  line-height: 24px;
+  float: right; 
+  padding-right: 20px;
+}
+
+.img{
+  padding: 10px;
+  height: 148px;
+  width: 310px;
+}
+
+.img_descr {
+  line-height: 30px;
+  font-size: 16px;
+  padding-left: 120px
+}
+
+.source {
+   font-size: 12px;
+   float: right;
+   line-height: 24px;
+} 

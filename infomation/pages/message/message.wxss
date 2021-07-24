@@ -1,0 +1,65 @@
+/* pages/message/message.wxss */
+.do{
+  font-size: 18px;
+}
+
+.pl-style{
+  color: #7B68EE;
+  font-size: 14px;
+}
+
+
+.content{
+  padding: 10px;
+  color: black;
+  background-color: #F8F8FF;
+  height: 80px;
+  border-radius: 10%;
+}
+.email{
+  padding-left: 10px;
+  margin-top: 10px;
+  background-color: #F5F5DC;
+  border-radius: 10%;
+  color: black;
+}
+
+.submit{
+  margin-top: 5px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+.show {
+  margin: 12px;
+}
+
+
+
+.right{  
+  width: 590rpx;
+  margin-top: 5px;
+  display: flex;  
+  flex-direction: row;  
+}  
+  
+.phone{  
+  text-align: center;
+  font-size: 30rpx;  
+  color:darkgrey;  
+  width: 70%;
+  border-radius: 10%;
+  padding: 5px;
+  background-color:#F0FFFF;
+}  
+   
+.time{  
+  width: 30%;  
+  color: #aaa;  
+  font-size: 26rpx;  
+  padding-left: 8px;
+  border-radius: 10%;
+}  

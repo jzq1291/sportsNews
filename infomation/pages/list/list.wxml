@@ -1,0 +1,20 @@
+<!--list.wxml-->
+<view class="container">
+  <view class="news-item-container">
+    <navigator url="../detail/detail?news_id={{item.news_id}}" wx:for="{{list}}" wx:for-index="id">
+      <view class="news-item">
+        <view class="news-item-left">
+          <text class="news-item-title">{{item.title}}</text>
+        </view>
+        <view class="news-item-right">
+          <image src="{{item.img_url}}" class="news-image" />
+        </view>
+      </view>
+    </navigator>
+    <view class='hint'>{{hint}}</view>
+    <button type="primary" class="load-btn" loading="{{loading}}" plain="{{plain}}" bindtap="loadMore">
+      更多新闻
+    </button>
+  </view>
+
+</view>

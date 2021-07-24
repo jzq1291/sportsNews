@@ -1,0 +1,19 @@
+<view class='container'>
+  <view class='do'>
+    <form bindsubmit="formSubmit">
+      <textarea name="content" placeholder="说出你见建议" class='content' 
+      placeholder-class = "pl-style" value="{{content}}"></textarea>
+      <input type='text' name="email" class='email' placeholder="请留下你的邮箱"
+      placeholder-class = "pl-style" value="{{email}}"></input>
+      <button form-type='submit' class='submit'>提交</button>
+    </form>
+  </view>
+  <view class='show'>
+    <view wx:for="{{msg}}" class='message'>
+      <view class="right">
+        <view class="phone">{{item.content}}</view>
+        <view class="time">{{item.time}}</view>
+      </view>
+    </view>
+  </view>
+</view>
